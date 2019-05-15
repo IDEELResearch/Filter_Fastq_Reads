@@ -13,7 +13,8 @@ import argparse
 import sys
 
 def parseargs():
-    parser = argparse.ArgumentParser(description = "Extract a bam file mapping quality and exclude reads with a MQ above a specified threshold.")
+    parser = argparse.ArgumentParser(description = "Extract a bam file mapping quality and exclude reads with a MQ above a specified threshold. \
+                                                    This file was adapted from dpryan79, https://github.com/dpryan79/Answers/tree/master/bioinfoSE_2149")
     parser.add_argument("-b", "--BAMfile",
                         help = "BAM file to extract/parse")
     parser.add_argument("-m", "--MQthreshold",
